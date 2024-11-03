@@ -5,7 +5,8 @@ import numpy as np
 import pandas as pd
 
 
-app= Flask(__name__)
+application = Flask(__name__)
+app=application
 
 
 scaler=pickle.load(open("models/standardScalar.pkl", "rb"))
